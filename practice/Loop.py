@@ -389,113 +389,113 @@
 #     print("Not an Armstrong number")    
 
 # 31. Write a Python program to print all Armstrong numbers between 1 to n.
-n = int(input("Enter n: "))
+# n = int(input("Enter n: "))
 
-num = 1
+# num = 1
 
-while num <= n:
-    temp = num
-    count = 0
+# while num <= n:
+#     temp = num
+#     count = 0
 
-    while temp > 0:
-        count += 1
-        temp //= 10
+#     while temp > 0:
+#         count += 1
+#         temp //= 10
 
-    temp = num
-    sum = 0
+#     temp = num
+#     sum = 0
 
-    while temp > 0:
-        digit = temp % 10
-        sum += digit ** count
-        temp //= 10
+#     while temp > 0:
+#         digit = temp % 10
+#         sum += digit ** count
+#         temp //= 10
 
-    if sum == num:
-        print(num)
+#     if sum == num:
+#         print(num)
 
-    num += 1
+#     num += 1
 
 # 32. Write a Python program to check whether a number is Perfect number or not.
-n = int(input("Enter a number: "))
+# n = int(input("Enter a number: "))
 
-sum = 0
-i = 1
+# sum = 0
+# i = 1
 
-while i < n:
-    if n % i == 0:
-        sum += i
-    i += 1
+# while i < n:
+#     if n % i == 0:
+#         sum += i
+#     i += 1
 
-if sum == n:
-    print("Perfect number")
-else:
-    print("Not a perfect number")
+# if sum == n:
+#     print("Perfect number")
+# else:
+#     print("Not a perfect number")
 
 # 33. Write a Python program to print all Perfect numbers between 1 to n.
-n = int(input("Enter n: "))
+# n = int(input("Enter n: "))
 
-num = 1
+# num = 1
 
-while num <= n:
-    sum = 0
-    i = 1
+# while num <= n:
+#     sum = 0
+#     i = 1
 
-    while i < num:
-        if num % i == 0:
-            sum += i
-        i += 1
+#     while i < num:
+#         if num % i == 0:
+#             sum += i
+#         i += 1
 
-    if sum == num:
-        print(num)
+#     if sum == num:
+#         print(num)
 
-    num += 1
+#     num += 1
 
 # 34. Write a Python program to check whether a number is Strong number or not.
-n = int(input("Enter a number: "))
+# n = int(input("Enter a number: "))
 
-original = n
-sum = 0
+# original = n
+# sum = 0
 
-while n > 0:
-    digit = n % 10
+# while n > 0:
+#     digit = n % 10
 
-    factorial = 1
-    i = 1
+#     factorial = 1
+#     i = 1
 
-    while i <= digit:
-        factorial *= i
-        i += 1
+#     while i <= digit:
+#         factorial *= i
+#         i += 1
 
-    sum += factorial
-    n //= 10
+#     sum += factorial
+#     n //= 10
 
-if sum == original:
-    print("Strong number")
-else:
-    print("Not a strong number")
+# if sum == original:
+#     print("Strong number")
+# else:
+#     print("Not a strong number")
 
 # 35. Write a Python program to print all Strong numbers between 1 to n.
-n = int(input("Enter n: "))
+# n = int(input("Enter n: "))
 
-num = 1
+# num = 1
 
-while num <= n:
-    temp = num
-    sum = 0
+# while num <= n:
+#     temp = num
+#     sum = 0
 
-    while temp > 0:
-        digit = temp % 10
+#     while temp > 0:
+#         digit = temp % 10
 
-        factorial = 1
-        i = 1
+#         factorial = 1
+#         i = 1
 
-        while i <= digit:
-            factorial *= i
-            i += 1
+#         while i <= digit:
+#             factorial *= i
+#             i += 1
 
-        sum += factorial
-        temp //= 10
+#         sum += factorial
+#         temp //= 10
 
-    if sum == num:
-        print(num)
+#     if sum == num:
+#         print(num)
 
-    num += 1
+#     num += 1
