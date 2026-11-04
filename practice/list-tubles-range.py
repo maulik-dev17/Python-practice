@@ -3,6 +3,8 @@
 
 # Beginner Level (1–5)
 # Q1. Create a List
+# furits = ["Bananas", "Apple", "Oranges", "Pineapple"]
+# print(furits)
 
 # Create a list containing 5 different fruits and print the list.
 
@@ -10,7 +12,7 @@
 
 # Create this list:
 # numbers = [10, 20, 30, 40, 50]
-
+# print(numbers[0], numbers[2], numbers[-1])
 
 # Print:
 # - First element
@@ -21,6 +23,8 @@
 # Create this list:
 # colors = ["red", "blue", "green"]
 
+# colors[1] = "yellow"
+# print(colors)
 
 # Change "blue" to "yellow" and print the updated list.
 
@@ -30,15 +34,28 @@
 # - Add "Tiger" at the end.
 # - Add "Lion" at the beginning.
 # - Print the updated list.
+
+# Animals = ["Dog", "Cat", "Elephant"]
+# Animals.append("Tiger")
+# Animals.insert(0,"Lion")
+
+# print(Animals)
+
 # Q5. Remove Elements
 
 # Create this list:
 # names = ["Amit", "Rahul", "Priya", "Karan"]
 
+# names.remove("Priya")
+# print(names)
 
 # Remove "Priya" and print the updated list.
 # Intermediate Level (6–10)
 # Q6. Find List Length
+
+# numbers = [10, 20, 30, 40, 50, 60, 70]
+
+# print(len(numbers))
 
 # Create a list of 7 numbers and print how many elements are in the list.
 
@@ -47,6 +64,10 @@
 # Given:
 # numbers = [10, 20, 30, 40, 50, 60, 70]
 
+# print(numbers[:3])
+# print(numbers[-3:])
+# print(numbers[2:6])
+# print(numbers[::-1])
 
 # Print:
 # - First 3 elements.
@@ -58,6 +79,7 @@
 # Given:
 # numbers = [10, 20, 30, 40, 50]
 
+# print(sum(numbers))
 
 # Calculate and print the sum of all numbers.
 
@@ -66,6 +88,7 @@
 # Given:
 # numbers = [45, 12, 89, 34, 67, 99, 23]
 
+# print(max(numbers))
 
 # Find the largest number in the list.
 
@@ -74,6 +97,7 @@
 # Given:
 # numbers = [10, 20, 10, 30, 10, 40, 20]
 
+# print(numbers.count(10))
 
 # Count how many times 10 appears in the list.
 # Challenge Level (11–15)
@@ -82,6 +106,17 @@
 # Given:
 # numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+# even = []
+# odd = []
+
+# for num in numbers:
+#     if num % 2 == 0:
+#         even.append(num)
+#     else:
+#         odd.append(num)
+        
+# print("Even :",even)
+# print("Odd: ",odd)
 
 # Create two separate lists:
 # - One containing even numbers.
@@ -94,6 +129,14 @@
 
 # Create a new list without duplicate elements.
 
+# unique = []
+
+# for num in numbers:
+#     if num not in unique:
+#         unique.append(num)
+
+# print(unique)
+
 # Try to maintain the original order.
 
 # Q13. Sort a List
@@ -101,6 +144,11 @@
 # Given:
 # numbers = [45, 12, 89, 34, 67, 23]
 
+# numbers.sort()
+# print("Ascending:", numbers)
+
+# numbers.sort(reverse=True)
+# print("Descending:", numbers)
 
 # Sort the list:
 # - In ascending order.
@@ -111,6 +159,11 @@
 # numbers = [10, 50, 30, 90, 70, 90]
 
 
+# unique = list(set(numbers))
+# unique.sort()
+
+# print("Second largest:", unique[-2])
+
 # Find the second-largest unique number.
 
 # Q15. List Reversal Challenge
@@ -118,11 +171,19 @@
 # Given:
 # numbers = [1, 2, 3, 4, 5]
 
+# reversed_list = []
+
+# for num in numbers:
+#     reversed_list.insert(0, num)
+
+# print(reversed_list)
 
 # Reverse the list without using:
 # - reverse()
 # - Slicing ([::-1])
+
 # Try solving it using a loop.
+
 # 🟡 PART 2: TUPLES (15 Questions)
 # These questions will help you understand tuple creation, indexing, slicing, unpacking, and tuple operations.
 # Beginner Level (1–5)
@@ -340,3 +401,4 @@
 # 123
 # 1234
 # 12345
+
