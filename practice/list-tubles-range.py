@@ -188,14 +188,19 @@
 # These questions will help you understand tuple creation, indexing, slicing, unpacking, and tuple operations.
 # Beginner Level (1–5)
 # Q16. Create a Tuple
-
 # Create a tuple containing 5 different programming languages and print it.
+
+# languages = ("Python", "Java", "C++", "JavaScript", "PHP")
+# print(languages)
 
 # Q17. Access Elements
 
 # Given:
 # languages = ("Python", "Java", "C++", "JavaScript", "PHP")
 
+# print(languages[0])
+# print(languages[2])
+# print(languages[-1])
 
 # Print:
 # - First element.
@@ -206,6 +211,7 @@
 # Given:
 # numbers = (10, 20, 30, 40, 50, 60)
 
+# print(len(numbers))
 
 # Find the length of the tuple.
 
@@ -214,6 +220,9 @@
 # Given:
 # numbers = (10, 20, 30, 40, 50, 60, 70)
 
+# print(numbers[:3])
+# print(numbers[-3:])
+# print(numbers[::-1])
 
 # Print:
 # - First 3 elements.
@@ -224,6 +233,7 @@
 # Given:
 # numbers = (10, 20, 10, 30, 10, 40, 20)
 
+# print(numbers.count(10))
 
 # Count how many times 10 appears.
 # Intermediate Level (6–10)
@@ -232,6 +242,7 @@
 # Given:
 # fruits = ("apple", "banana", "mango", "orange")
 
+# print(fruits.index("mango"))
 
 # Find the index position of "mango".
 
@@ -240,6 +251,7 @@
 # Given:
 # colors = ("red", "green", "blue", "yellow")
 
+# print("green" in colors)
 
 # Check whether "green" exists in the tuple.
 
@@ -248,8 +260,11 @@
 # Q23. Tuple Concatenation
 
 # Create two tuples:
-# a = (1, 2, 3)b = (4, 5, 6)
+# a = (1, 2, 3) 
+# b = (4, 5, 6)
 
+# result = a + b
+# print(result)
 
 # Combine them into one tuple.
 
@@ -258,6 +273,8 @@
 # Given:
 # numbers = (1, 2, 3)
 
+# result = numbers * 3
+# print(result)
 
 # Repeat this tuple 3 times and print the result.
 
@@ -266,6 +283,11 @@
 # Given:
 # student = ("Rahul", 20, "Python")
 
+# name, age, course = student
+
+# print(name)
+# print(age)
+# print(course)
 
 # Unpack the tuple into three variables:
 # - name
@@ -278,6 +300,10 @@
 # Create two variables:
 # a = 10b = 20
 
+# a, b = b, a
+
+# print("a =", a)
+# print("b =", b)
 
 # Swap their values using tuple unpacking.
 
@@ -286,6 +312,8 @@
 # Given:
 # numbers = (45, 12, 89, 34, 67, 99, 23)
 
+# print("Maximum :",max(numbers))
+# print("Minimum :",min(numbers))
 
 # Find the maximum and minimum values.
 
@@ -294,6 +322,8 @@
 # Given:
 # numbers = [10, 20, 30, 40, 50]
 
+# result = tuple(numbers)
+# print(result)
 
 # Convert this list into a tuple.
 
@@ -302,6 +332,9 @@
 # Given:
 # students = (    ("Amit", 85),    ("Rahul", 90),    ("Priya", 95))
 
+# print(students[1][1])
+# print(students[2][1])
+# print(students[0][0])
 
 # Print:
 # - Rahul's marks.
@@ -310,6 +343,10 @@
 # Q30. Single Element Tuple
 
 # Create a tuple containing only one element: "Python".
+
+# language = ("Python",)
+
+# print(type(language))
 
 # Print its type and make sure the output is <class 'tuple'>.
 # 🔵 PART 3: RANGES (15 Questions)
