@@ -356,39 +356,70 @@
 
 # Use range() to print numbers from 0 to 9 using a loop.
 
+# for i in range(10):
+#     print(i)
+
 # Q32. Start and Stop
 
 # Use range() to print numbers from 1 to 20.
+
+# for i in range(1, 21):
+#     print(i)
 
 # Q33. Even Numbers
 
 # Use range() to print all even numbers from 2 to 20.
 
+# for i in range(2, 21, 2):
+#     print(i)
+
 # Q34. Odd Numbers
 
 # Use range() to print all odd numbers from 1 to 19.
+
+# for i in range(1, 20, 2):
+#     print(i)
 
 # Q35. Reverse Range
 
 # Use range() to print numbers from 10 down to 1.
 # Intermediate Level (6–10)
+
+# for i in range(10 , 6, -1):
+#     print(i)
+
 # Q36. Multiplication Table
 
 # Take a number from the user and print its multiplication table from 1 to 10 using range().
+
+# num = int(input("Enter the number: "))
+
+# for i in range(1, 11):
+#     print(num, "X", i, "=", num * i)
 
 # Q37. Sum of Numbers
 
 # Use range() and a loop to calculate the sum of numbers from 1 to 100.
 
+# total = 0
+
+# for i in range(1, 101):
+#     total = total + i
+    
+# print("Sum :", total)
+
 # Q38. Multiples of 5
 
 # Use range() to print all multiples of 5 between 5 and 100.
+
+# for i in range(5, 101, 5):
+#     print(i)
 
 # Q39. Range with Step
 
 # What will be the output of this code?
 # for i in range(2, 21, 3):    print(i)
-
+# 2 ,5 ,8 ,11 ,14 ,17, 20
 
 # Try to understand how the step value works.
 
@@ -396,7 +427,7 @@
 
 # Convert this range into a list and print it:
 # numbers = range(1, 11)
-
+# print(list(numbers))
 
 # Challenge Level (11–15)
 # Q41. Countdown
@@ -413,14 +444,27 @@
 # 2
 # 1
 # Start!
+# for i in range(10, 0, -1):
+#     print(i)
+
+# print("Start!")
 
 # Q42. Sum of Even Numbers
 
 # Use range() to calculate the sum of all even numbers between 1 and 100.
+# total = 0
+
+# for i in range(2, 101, 2):
+#     total = total + i
+# print(total)
 
 # Q43. Find Divisible Numbers
 
 # Use range() and a loop to print all numbers between 1 and 100 that are divisible by both 3 and 5.
+
+# for i in range(1, 101):
+#     if i % 3 == 0 and i % 5 == 0:
+#         print(i)
 
 # Q44. Factorial
 
@@ -429,6 +473,15 @@
 # Example:
 # Enter number: 5
 # Factorial: 120
+
+# num = int(input("Enter number: "))
+
+# factorial = 1
+
+# for i in range(1, num + 1):
+#     factorial = factorial * i
+
+# print("Factorial:", factorial)
 
 # Q45. Number Pattern
 
@@ -439,3 +492,7 @@
 # 1234
 # 12345
 
+for i in range(1, 6):
+    for j in range(1, i + 1):
+        print(j, end="")
+    print()
