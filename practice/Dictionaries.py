@@ -98,8 +98,22 @@
 
 # 8. Write a Python program to merge two dictionaries into one. Demonstratehow to handle conflicts if both dictionaries contain the same key.Dictionary Comprehensions:
 
+# dict1 = {'a': 10, 'b': 20, 'c': 30}
+# dict2 = {'b': 50, 'd': 40, 'e': 60}
 
+# merged_dict = dict1.copy()
+
+# for key, value in dict2.items():
+#     if key in merged_dict:
+#         print("Conflict found for key:", key)
+#         print("Old value:", merged_dict[key])
+#         print("New value:", value)
+
+#     merged_dict[key] = value
+
+# print("Merged Dictionary:", merged_dict)
 
 # 9. Write a Python program to create a dictionary using dictionarycomprehension. For example, create a dictionary where the keys arenumbers from 1 to 10 and the values are the squares of the keys.
 
-
+# squares = {x: x**2 for x in range(1, 11)}
+# print("Dictionary of Squares:", squares)
