@@ -336,21 +336,148 @@
 
 # 18. Write a Python program to count the number of times each character appears in a given string using a dictionary.
 
+# test = "programming"
 
+# char_count = {}
+
+# for char in test:
+#     if char in char_count:
+#         char_count[char] += 1
+#     else:
+#         char_count[char] = 1
+
+# print(char_count)
 
 # 19. Write a Python program to merge two dictionaries. If the same key exists, add their values instead of replacing them.
 
+# student1 = {"gujarati": 85, "Math": 75, "Sicence": 95, "Social_Sicence": 90, "English": 80}
+# student2 = {"gujarati": 90, "Math": 80, "Sicence": 85, "Social_Sicence": 95, "English": 75}
+
+# result = student1.copy()
+
+# for key, value in student2.items():
+#     result[key] = (result.get(key, 0) + value) / 2
+
+# print(result)
+
 # 20. Write a Python program to create a dictionary containing numbers from 1 to 20 as keys and their cubes as values.
+
+# cude = {}
+
+# for i in range(1, 21):
+#     cude[i] = i ** 3
+# print(cude)
 
 # 21. Write a Python program to find the key associated with the maximum value in a dictionary.
 
+# students_grades = {
+#     "Gujarati": 85,
+#     "Math": 75,
+#     "Sicence": 95,
+#     "Social Sicence": 90,
+#     "English": 80,
+# } 
+
+# max = max(students_grades, key = students_grades.get)
+# min = min(students_grades, key = students_grades.get)
+
+# print(max, "has the maximum value of", students_grades[max])
+# print(min, "has the minimum value of", students_grades[min])
+
 # 22. Write a Python program to reverse a dictionary (swap keys and values).
 
+# students = [
+#     {"name": "Hetal", "age": 21, "course": "Marketing", "city": "Ahmedabad"},
+#     {"name": "Huma", "age": 20, "course": "Human research", "city": "Baroda"},
+#     {"name": "Manu", "age": 21, "course": "Coding", "city": "Mumbai"},
+# ]
+
+# reversed = {}
+# for student in students:
+#     for key, value in student.items():
+#         reversed[value] = key
+# print(reversed)
+# -----------------------------------or---------------------------------------------
+ 
+# reversed_dict = {}
+
+# for student in students:
+#     for key, value in student.items():
+#         if key not in reversed_dict:
+#             reversed_dict[key] = []
+
+#         reversed_dict[key].append(value)
+
+# print(reversed_dict)
+  
 # 23. Write a Python program to sort a dictionary by its values in ascending order.
+
+# wiht lambda function
+# students_grades = {
+#     "Gujarati": 85,
+#     "Math": 75,
+#     "Sicence": 95,
+#     "Social Sicence": 90,
+#     "English": 80,
+# }
+
+# sorted_grades = dict(
+#     sorted(students_grades.items(), key=lambda item: item[1])
+# )
+
+# print(sorted_grades)
+
+# ------------------------------------or---------------------------------------------
+
+# without lambda function
+# students_grades = {
+#     "Gujarati": 85,
+#     "Math": 75,
+#     "Science": 95,
+#     "Social Science": 90,
+#     "English": 80,
+# }
+
+# def get_value(item):
+#     return item[1]
+
+# sorted_grades = dict(
+#     sorted(students_grades.items(), key=get_value)
+# )
+
+# print(sorted_grades)
 
 # 24. Write a Python program to remove duplicate values from a dictionary.
 
+# data = {
+#     "a": 10,
+#     "b": 20,
+#     "c": 10,
+#     "d": 30,
+#     "e": 20
+# }
+
+# result = {}
+
+# for key, value in data.items():
+#     if value not in result.values():
+#         result[key] = value
+
+# print(result)
+
 # 25. Write a Python program to combine three dictionaries into one dictionary.
+
+# dict1 = {"a": 10, "b": 20}
+# dict2 = {"c": 30, "d": 40}
+# dict3 = {"e": 50, "f": 60}
+
+# result = {}
+
+# result.update(dict1)
+# result.update(dict2)
+# result.update(dict3)
+
+# print(result)
 
 # 26. Write a Python program to create a nested dictionary containing the details of three students (name, age, marks). Display the details of each student.
 
