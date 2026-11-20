@@ -48,11 +48,11 @@
 # print("keys:")
 # for key in student.keys():
 #     print(key)
-    
+
 # print("\nValues:")
 # for value in student.values():
 #     print(value)
-    
+
 # print("\nKey-Value Pairs:")
 # for key, value in student.items():
 #     print(key, ":", value)
@@ -132,3 +132,228 @@
 
 # squares = {x: x**2 for x in range(1, 11)}
 # print("Dictionary of Squares:", squares)
+
+# 1. Create a dictionary containing a student's name, age, course, and city. Print the dictionary.
+
+# students = [
+#     {"name": "Hetal", "age": 21, "course": "Marketing", "city": "Ahmedabad"},
+#     {"name": "Huma", "age": 20, "course": "Human research", "city": "Baroda"},
+#     {"name": "Manu", "age": 21, "course": "Coding", "city": "Mumbai"},
+# ]
+
+# print(students)
+
+# 2. Write a Python program to access the value of a given key in a dictionary.
+
+# students = [
+#     {"name": "Hetal", "age": 21, "course": "Marketing", "city": "Ahmedabad"},
+#     {"name": "Huma", "age": 20, "course": "Human research", "city": "Baroda"},
+#     {"name": "Manu", "age": 21, "course": "Coding", "city": "Mumbai"},
+# ]
+
+# print(students[0]["name"])
+# print(students[0]["age"])
+# print(students[0]["course"])
+# print(students[0]["city"])
+
+# print('------------------------------------------------------')
+
+# print(students[1]["name"])
+# print(students[1]["age"])
+# print(students[1]["course"])
+# print(students[1]["city"])
+
+# print('------------------------------------------------------')
+
+# print(students[2]["name"])
+# print(students[2]["age"])
+# print(students[2]["course"])
+# print(students[2]["city"])
+
+# 3. Write a Python program to add a new key-value pair to an existing dictionary.
+
+# students = [
+#     {"name": "Hetal", "age": 21, "course": "Marketing", "city": "Ahmedabad"},
+#     {"name": "Huma", "age": 20, "course": "Human research", "city": "Baroda"},
+#     {"name": "Manu", "age": 21, "course": "Coding", "city": "Mumbai"},
+# ]
+
+# students[0]["state"] = "Gujarat"
+# students[1]["state"] = "Gujarat"
+# students[2]["state"] = "Maharashtra"
+# print(students)
+
+# 4. Write a Python program to update the value of an existing key in a dictionary.
+
+# students = [
+#     {"name": "Hetal", "age": 21, "course": "Marketing", "city": "Ahmedabad"},
+#     {"name": "Huma", "age": 20, "course": "Human research", "city": "Baroda"},
+#     {"name": "Manu", "age": 21, "course": "Coding", "city": "Mumbai"},
+# ]
+
+# students[1]["age"] = 21
+# print(students)
+
+# 5. Write a Python program to delete a key from a dictionary using the del keyword.
+
+# students = [
+#     {"name": "Hetal", "age": 21, "course": "Marketing", "city": "Ahmedabad"},
+#     {"name": "Huma", "age": 20, "course": "Human research", "city": "Baroda"},
+#     {"name": "Manu", "age": 21, "course": "Coding", "city": "Mumbai"},
+# ]
+
+# del students[0]["course"]
+# del students[1]["course"]
+# del students[2]["course"]
+
+# print(students)
+
+# 6. Write a Python program to find the length of a dictionary using len().
+
+# students = [
+#     {"name": "Hetal", "age": 21, "course": "Marketing", "city": "Ahmedabad"},
+#     {"name": "Huma", "age": 20, "course": "Human research", "city": "Baroda"},
+#     {"name": "Manu", "age": 21, "course": "Coding", "city": "Mumbai"},
+# ]
+
+# print(len(students))
+
+# 7. Write a Python program to check whether a particular key exists in a dictionary.
+
+# students = {"name": "Hetal", "age": 21, "course": "Marketing", "city": "Ahmedabad"}
+
+# if "age" in students:
+#     print("Key exists")
+# else:
+#     print("Key does not exist")
+    
+# if "name" in students:
+#     print("Key exists")
+# else:
+#     print("Key does not exist")
+
+# if "course" in students:
+#     print("Key exists")
+# else:
+#     print("Key does not exist")
+
+# if "state" in students:
+#     print("Key exists")
+# else:
+    # print("Key does not exist")
+    
+# 8. Write a Python program to print all keys and values of a dictionary separately.
+
+# students = {"name": "Hetal", "age": 21, "course": "Marketing", "city": "Ahmedabad"}
+
+# print("keys :")
+# for key in students.keys():
+#     print(key)
+    
+# print("----------------------------------")
+    
+# print("values :")
+# for value in students.values():
+#     print(value)
+
+# 9. Write a Python program to use the get() method to access a key. If the key does not exist, return a default message.
+
+# students = {"name": "Hetal", "age": 21, "course": "Marketing", "city": "Ahmedabad"}
+
+# print(students.get("name", "Key not found"))
+# print(students.get("age", "Key not found"))
+# print(students.get("course", "Key not found"))
+# print(students.get("state", "Key not found"))
+
+# 10. Write a Python program to use the pop() method to remove a particular key from a dictionary.
+
+# students = {"name": "Hetal", "age": 21, "course": "Marketing", "city": "Ahmedabad"}
+
+# print(students.pop("course"))
+# print(students)
+
+# 11. Write a Python program to use the popitem() method to remove the last inserted item.
+
+# students = {"name": "Hetal", "age": 21, "course": "Marketing", "city": "Ahmedabad"}
+
+# print(students.popitem())
+# print(students)
+
+# 12. Write a Python program to copy one dictionary into another using the copy() method.
+
+# students = {"name": "Hetal", "age": 21, "course": "Marketing", "city": "Ahmedabad"}
+# print(students.copy())
+# print(students.popitem())
+
+# 13. Write a Python program to remove all elements from a dictionary using clear().
+
+# students = {"name": "Hetal", "age": 21, "course": "Marketing", "city": "Ahmedabad"}
+# students.clear()
+# print(students)
+
+# 14. Write a Python program to iterate through a dictionary using a for loop and print each key-value pair.
+
+
+
+# 15. Write a Python program to count how many key-value pairs are present in a dictionary.
+
+# 16. Write a Python program to find the sum of all values in a dictionary.
+
+# 17. Write a Python program to find the maximum and minimum values in a dictionary.
+
+# 18. Write a Python program to count the number of times each character appears in a given string using a dictionary.
+
+# 19. Write a Python program to merge two dictionaries. If the same key exists, add their values instead of replacing them.
+
+# 20. Write a Python program to create a dictionary containing numbers from 1 to 20 as keys and their cubes as values.
+
+# 21. Write a Python program to find the key associated with the maximum value in a dictionary.
+
+# 22. Write a Python program to reverse a dictionary (swap keys and values).
+
+# 23. Write a Python program to sort a dictionary by its values in ascending order.
+
+# 24. Write a Python program to remove duplicate values from a dictionary.
+
+# 25. Write a Python program to combine three dictionaries into one dictionary.
+
+# 26. Write a Python program to create a nested dictionary containing the details of three students (name, age, marks). Display the details of each student.
+
+# 27. Write a Python program to find the common keys between two dictionaries.
+
+# 28. Student Marks Management System
+
+# Create a dictionary containing five students and their marks.
+
+# Perform the following operations:
+# - Display all students and their marks.
+# - Add a new student.
+# - Update a student's marks.
+# - Delete a student.
+# - Find the student with the highest marks.
+# - Calculate the average marks.
+# 29. Word Frequency Counter
+
+# Write a Python program that accepts a sentence from the user and counts how many times each word appears.
+
+# Example:
+# Input: apple banana apple mango banana apple
+
+# Output:
+# {
+#     'apple': 3,
+#     'banana': 2,
+#     'mango': 1
+# }
+
+# 30. Shopping Cart System
+
+# Create a dictionary-based shopping cart.
+
+# Perform the following operations:
+# - Add products with their prices.
+# - Update product prices.
+# - Remove products.
+# - Display all products and prices.
+# - Calculate the total bill.
+# - Find the most expensive product.
