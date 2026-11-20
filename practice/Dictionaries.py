@@ -293,15 +293,50 @@
 
 # 14. Write a Python program to iterate through a dictionary using a for loop and print each key-value pair.
 
+# students = {"name": "Hetal", "age": 21, "course": "Marketing", "city": "Ahmedabad"}
 
+# for key, value in students.items():
+#     print(key, ":" ,value)
 
 # 15. Write a Python program to count how many key-value pairs are present in a dictionary.
 
+# students = {"name": "Hetal", "age": 21, "course": "Marketing", "city": "Ahmedabad"}
+
+# count = len(students)
+# print("Total key-value pairs:",count)
+
 # 16. Write a Python program to find the sum of all values in a dictionary.
+
+# students_grades = {
+#     "Gujarati": 85,
+#     "Math": 75,
+#     "Sicence": 95,
+#     "Social Sicence": 90,
+#     "English": 80,
+# }
+
+# total = sum(students_grades.values())
+# print("sum of all the grades:" ,total)
 
 # 17. Write a Python program to find the maximum and minimum values in a dictionary.
 
+# students_grades = {
+#     "Gujarati": 85,
+#     "Math": 75,
+#     "Sicence": 95,
+#     "Social Sicence": 90,
+#     "English": 80,
+# }
+
+# maximun = max(students_grades.values())
+# minimun = min(students_grades.values())
+
+# print("Maximum numbers :", maximun)
+# print("Manimum numbers :", minimun)
+
 # 18. Write a Python program to count the number of times each character appears in a given string using a dictionary.
+
+
 
 # 19. Write a Python program to merge two dictionaries. If the same key exists, add their values instead of replacing them.
 
