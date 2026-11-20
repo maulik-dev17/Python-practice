@@ -94,22 +94,22 @@
 
 # 7. Intermediate Dictionary OperationsMerging Dictionaries:
 
-student = {
-    'name': 'Rahul',
-    'age': 20,
-    'course': 'Python'
-}
+# student = {
+#     'name': 'Rahul',
+#     'age': 20,
+#     'course': 'Python'
+# }
 
-print("Original Dictionary:", student)
-print("Keys:", student.keys())
-print("Values:", student.values())
-student['age'] = 21
-print("After Updating:", student)
-student['city'] = 'Ahmedabad'
-print("After Adding:", student)
-del student['course']
-print("After Deleting:", student)
-print("name" in student)
+# print("Original Dictionary:", student)
+# print("Keys:", student.keys())
+# print("Values:", student.values())
+# student['age'] = 21
+# print("After Updating:", student)
+# student['city'] = 'Ahmedabad'
+# print("After Adding:", student)
+# del student['course']
+# print("After Deleting:", student)
+# print("name" in student)
 
 # 8. Write a Python program to merge two dictionaries into one. Demonstratehow to handle conflicts if both dictionaries contain the same key.Dictionary Comprehensions:
 
