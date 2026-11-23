@@ -226,7 +226,7 @@
 #     print("Key exists")
 # else:
 #     print("Key does not exist")
-    
+
 # if "name" in students:
 #     print("Key exists")
 # else:
@@ -240,8 +240,8 @@
 # if "state" in students:
 #     print("Key exists")
 # else:
-    # print("Key does not exist")
-    
+# print("Key does not exist")
+
 # 8. Write a Python program to print all keys and values of a dictionary separately.
 
 # students = {"name": "Hetal", "age": 21, "course": "Marketing", "city": "Ahmedabad"}
@@ -249,9 +249,9 @@
 # print("keys :")
 # for key in students.keys():
 #     print(key)
-    
+
 # print("----------------------------------")
-    
+
 # print("values :")
 # for value in students.values():
 #     print(value)
@@ -376,7 +376,7 @@
 #     "Sicence": 95,
 #     "Social Sicence": 90,
 #     "English": 80,
-# } 
+# }
 
 # max = max(students_grades, key = students_grades.get)
 # min = min(students_grades, key = students_grades.get)
@@ -398,7 +398,7 @@
 #         reversed[value] = key
 # print(reversed)
 # -----------------------------------or---------------------------------------------
- 
+
 # reversed_dict = {}
 
 # for student in students:
@@ -409,7 +409,7 @@
 #         reversed_dict[key].append(value)
 
 # print(reversed_dict)
-  
+
 # 23. Write a Python program to sort a dictionary by its values in ascending order.
 
 # wiht lambda function
@@ -481,7 +481,50 @@
 
 # 26. Write a Python program to create a nested dictionary containing the details of three students (name, age, marks). Display the details of each student.
 
+# students = {
+#     1: {
+#         "name": "Rahul",
+#         "age": 20,
+#         "marks": 85
+#     },
+#     2: {
+#         "name": "Amit",
+#         "age": 21,
+#         "marks": 90
+#     },
+#     3: {
+#         "name": "Priya",
+#         "age": 19,
+#         "marks": 95
+#     }
+# }
+
+# for roll_no, details in students.items():
+#     print("Roll No:", roll_no)
+#     print("Name:", details["name"])
+#     print("Age:", details["age"])
+#     print("Marks:", details["marks"])
+#     print("-------------------")
+
 # 27. Write a Python program to find the common keys between two dictionaries.
+
+# dict1 = {
+#     "name": "Rahul",
+#     "age": 20,
+#     "city": "Ahmedabad",
+#     "course": "Python"
+# }
+
+# dict2 = {
+#     "name": "Amit",
+#     "age": 22,
+#     "salary": 25000,
+#     "course": "Java"
+# }
+
+# common_keys = dict1.keys() & dict2.keys()
+
+# print("Common keys:", common_keys)
 
 # 28. Student Marks Management System
 
@@ -494,6 +537,50 @@
 # - Delete a student.
 # - Find the student with the highest marks.
 # - Calculate the average marks.
+
+# students = {
+#     "Rahul": 85,
+#     "Amit": 90,
+#     "Priya": 78,
+#     "Neha": 95,
+#     "Karan": 88
+# }
+
+# # 1. Display all students and marks
+# print("Student Marks:")
+
+# for name, marks in students.items():
+#     print(name, ":", marks)
+
+# # 2. Add a new student
+# students["Riya"] = 92
+
+# print("\nAfter Adding Student:")
+# print(students)
+
+# # 3. Update student's marks
+# students["Rahul"] = 89
+
+# print("\nAfter Updating Marks:")
+# print(students)
+
+# # 4. Delete a student
+# del students["Karan"]
+
+# print("\nAfter Deleting Student:")
+# print(students)
+
+# # 5. Find student with highest marks
+# topper = max(students, key=students.get)
+
+# print("\nTopper:", topper)
+# print("Highest Marks:", students[topper])
+
+# # 6. Calculate average marks
+# average = sum(students.values()) / len(students)
+
+# print("\nAverage Marks:", average)
+
 # 29. Word Frequency Counter
 
 # Write a Python program that accepts a sentence from the user and counts how many times each word appears.
@@ -508,6 +595,20 @@
 #     'mango': 1
 # }
 
+# sentence = input("Enter a sentence: ")
+
+# words = sentence.split()
+
+# frequency = {}
+
+# for word in words:
+#     if word in frequency:
+#         frequency[word] += 1
+#     else:
+#         frequency[word] = 1
+
+# print(frequency)
+
 # 30. Shopping Cart System
 
 # Create a dictionary-based shopping cart.
@@ -519,3 +620,582 @@
 # - Display all products and prices.
 # - Calculate the total bill.
 # - Find the most expensive product.
+
+# cart = {
+#     "Laptop": 50000,
+#     "Mobile": 20000,
+#     "Headphones": 2000,
+#     "Keyboard": 1500
+# }
+
+# print("Shopping Cart:")
+
+# for product, price in cart.items():
+#     print(product, ":", price)
+
+# cart["Mouse"] = 800
+
+# print("\nAfter Adding Product:")
+# print(cart)
+
+# cart["Mobile"] = 22000
+
+# print("\nAfter Updating Price:")
+# print(cart)
+
+# cart.pop("Keyboard")
+
+# print("\nAfter Removing Product:")
+# print(cart)
+
+# total = sum(cart.values())
+
+# print("\nTotal Bill:", total)
+
+# expensive = max(cart, key=cart.get)
+
+# print("\nMost Expensive Product:", expensive)
+# print("Price:", cart[expensive])
+
+# This more qutions for learn:
+
+# 1. Create a dictionary named details with the keys name, age, city, and hobbies. Use the same kinds of values shown in the lesson file.
+
+# student = {"name": "Maulik", "age": "23", "city": "Ahemdabad", "hobbies": "movie"}
+# print(student)
+
+# 2. Print the complete details dictionary.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# print(details)
+
+# 3. Print the value stored under the name key.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# print(details["name"])
+
+# 4. Print the value stored under the city key.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# print(details["city"])
+
+# 5. Print the first item from the hobbies list stored inside the dictionary.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# print(details["hobbies"][0])
+
+# 6. Print the second item from the hobbies list stored inside the dictionary.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# print(details["hobbies"][1])
+
+# 7. Print the value stored under the age key.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# print(details["age"])
+
+# 8. Use a for loop to print every key in the details dictionary.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# for key in details:
+#     print(key)
+
+# 9. Use a for loop to print each key along with its corresponding value in the format key : value.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# for key,value in details.items():
+#     print(key, ":" , value)
+
+# 10. Change the age value in the dictionary to 25 and print the updated dictionary.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# details["age"] = 25
+
+# print(details)
+
+# 11. Change the city value to Surat and print the dictionary.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# details["city"] = "Surat"
+
+# print(details)
+
+# 12. Add a country key with the value India to the dictionary.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# details["country"] = "India"
+
+# print(details)
+
+# 13. Add a course key with a value of your choice to the dictionary.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"],
+#     "country" : "India"
+# }
+
+# details["course"] = "Managements"
+
+# print(details)
+
+# 14. Use get() to retrieve the value of the name key.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# print(details.get("name"))
+
+# 15. Use get() to retrieve a key that does not exist, providing an empty string as the default value.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# print(details.get("surname", ""))
+
+# 16. Use get() to retrieve a missing phone key and provide Not available as the default value.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# print(details.get("phone", "Not available"))
+
+# 17. Use setdefault() to add the country key with the value UK if the key does not already exist.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# details.setdefault("country","UK")
+
+# print(details)
+
+# 18. Use setdefault() on the city key with the value Surat. Then print the dictionary and observe whether the existing city value changes.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# details.setdefault("city", "Surat")
+
+# print(details)
+
+# 19. Store the dictionary's keys in a variable using keys(), then print that variable.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# all_keys = details.keys()
+
+# print(all_keys)
+ 
+# 20. Convert the dictionary's keys into a list and print the list.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# all_keys = list(details.keys())
+# print(all_keys)
+
+# 21. Store the dictionary's values in a variable using values(), then print that variable.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# all_values = details.values()
+
+# print(all_values)
+
+# 22. Convert the dictionary's values into a list and print the list.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# all_values = list(details.values())
+
+# print(all_values)
+
+# 23. Check whether the country key exists among the dictionary's keys.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# print("country" in details)
+
+# 24. Write an if statement that prints a message when the country key exists in the dictionary.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "country": "Uk",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# if "country" in details:
+#     print("country key exists")
+# else:
+#     print("country key not exists")    
+
+# 25. Check whether the email key exists in the dictionary and print the result.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "country": "Uk",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# if "email" in details:
+#     print("email key exists")
+# else:
+#     print("email key not exists") 
+
+# 26. Use pop() to remove the city key from the dictionary. Print the value returned by pop().
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "country": "Uk",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# removed_value = details.pop("city")
+
+# print("Removed value:", removed_value)
+
+# 27. Remove the age key using pop() and then print the remaining dictionary.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "country": "Uk",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# removed_value = details.pop("age")
+
+# print(details)
+
+# 28. Use popitem() to remove one key-value pair from the dictionary and print the returned pair.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "country": "Uk",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# removed_item = details.popitem()
+
+# print("Removed item:", removed_item)
+
+# 29. Print the dictionary after using popitem().
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "country": "Uk",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# removed_item = details.popitem()
+
+# print("Removed item:", removed_item)
+
+# print(details)
+
+# 30. Make a copy of the details dictionary and store it in a new variable. Print both dictionaries.\
+    
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# new_details = details.copy()
+
+# print("Original Dictionary:", details)
+# print("Copied Dictionary:", new_details)
+
+# 31. Change one value in the copied dictionary and print both dictionaries to compare them.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# new_details = details.copy()
+
+# new_details["name"] = "Rahul"
+
+# print("Original Dictionary:", details)
+# print("Copied Dictionary:", new_details)
+
+# 32. Use items() to display all key-value pairs in the dictionary.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# print(details.items())
+
+# 33. Convert the result of items() into a list and print it.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# print(list(details.items()))
+
+# 34. Create a second dictionary named details2 containing country and age keys.
+
+# details2 = {
+#     "country": "India",
+#     "age": "25"
+# }
+
+# print(details2)
+
+# 35. Use update() to add the values from details2 to details.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# details2 = {
+#     "country": "India",
+#     "age": "25"
+# }
+
+# details.update(details2)
+
+# print(details)
+
+# 36. Create details2 with an age value different from the age value in details. Use update() and print details to observe the result.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# details2 = {
+#     "age": "55"
+# }
+
+# details.update(details2)
+
+# print(details)
+
+# 37. Create a second dictionary with two new keys and use update() to add them to details.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad",
+#     "hobbies": ["movie", "cricket"]
+# }
+
+# details2 = {
+#     "nationality": "Indian",
+#        "country" : "India"
+# }
+
+# details.update(details2)
+
+# print(details)
+
+# 38. Create a second dictionary containing one existing key and one new key. Use update() and print the final dictionary.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "city": "Ahemdabad"
+# }
+
+# details2 = {
+#     "age": "25",
+#     "country": "India"
+# }
+
+# details.update(details2)
+
+# print(details)
+
+# 39. Create a dictionary containing a hobbies list. Access and print the last item in that list using its key and list index.
+
+# details = {
+#     "name": "Maulik",
+#     "age": "23",
+#     "hobbies": ["movie", "cricket", "reading", "music"]
+# }
+
+# print(details["hobbies"][-1])
+
+# 40. Create a dictionary of your own with at least four key-value pairs, including one key whose value is a list. Print the dictionary, loop through its keys and values, and display the list's first item.
+
+# details = {
+#     "name": "Maulik",
+#     "age": 23,
+#     "city": "Ahmedabad",
+#     "course": "Python",
+#     "hobbies": ["movie", "cricket", "music"]
+# }
+
+# # Print complete dictionary
+# print("Complete Dictionary:")
+# print(details)
+
+# # Print all keys and values
+# print("\nAll Keys and Values:")
+
+# for key, value in details.items():
+#     print(key, ":", value)
+
+# # Print first hobby
+# print("\nFirst Hobby:")
+# print(details["hobbies"][0])
+
+
+
+# simple dictionary making code:
+# def convert_to_dict(data):
+#     my_dict = {}
+
+#     for item in data.split(","):
+#         key, value = item.split(":")
+#         my_dict[key] = value
+
+#     return my_dict
+
+
+# data = input("Enter data: ")
+
+# result = convert_to_dict(data)
+
+# print(result)

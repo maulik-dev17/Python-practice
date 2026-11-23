@@ -1,15 +1,18 @@
 
-    "a": 10,
-    "b": 20,
-    "c": 10,
-    "d": 30,
-    "e": 20
+    "course": "Python",
+    "hobbies": ["movie", "cricket", "music"]
 }
 
-result = {}
+# Print complete dictionary
+print("Complete Dictionary:")
+print(details)
 
-for key, value in data.items():
-    if value not in result.values():
-        result[key] = value
+# Print all keys and values
+print("\nAll Keys and Values:")
 
-print(result)
+for key, value in details.items():
+    print(key, ":", value)
+
+# Print first hobby
+print("\nFirst Hobby:")
+print(details["hobbies"][0])
