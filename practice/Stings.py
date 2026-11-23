@@ -2,14 +2,53 @@
 
 # Learn basic string methods.
 # 1. Write a program to convert "hello world" into uppercase using upper().
+
+# text = "hello world"
+# result = text.upper()
+# print(result)
+
 # 2. Convert "PYTHON PROGRAMMING" into lowercase using lower().
+
+# text = "PYTHON PROGRAMMING"
+# result = text.lower()
+# print(result)
+
 # 3. Convert "python" into "Python" using capitalize().
+
+# text = "python"
+# result = text.capitalize()
+# print(result)
+
 # 4. Convert "hello world" into "Hello World" using title().
+
+# text = "hello world"
+# result = text.title()
+# print(result)
+
 # 5. Remove extra spaces from "   Python   " using strip().
+
+# text = "   Python   "
+# result = text.strip()
+# print(result)
+
 # 6. Count how many times the letter "a" appears in "banana" using count().
+
+# text = "banana"
+# result = text.count("a")
+# print(result)
+
 # 7. Find the position of "o" in "Hello World" using find().
+
+# text = "Hello World"
+# result = text.find("o")
+# print(result)
+
 # 8. Check whether "Python" starts with "Py" using startswith().
-   
+
+# text = "Python"
+# result = text.startswith("Py")
+# print(result)
+
 #    Level 2: Easy
 
 #    Practice searching, replacing and checking strings.
