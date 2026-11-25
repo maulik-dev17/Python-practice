@@ -1,5 +1,5 @@
 # +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-                                                        #chat gpt Python String Practice
+# chat gpt Python String Practice
 # +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
 # Level 1: Beginner
@@ -233,41 +233,228 @@
 
 # print("Converted sentence:", " ".join(result))
 # +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-                                                        #Kict Python String Practice
+# Kict Python String Practice
 # +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 # String Basics:
 
 # 1. Write a Python program to reverse a string without using slicing.
+
+# text = input("Enter you string: ")
+# reversed = ""
+# for char in text:
+#     reversed = char + reversed
+
+# print("reversed string: ", reversed)
+
 # 2. Write a Python program to check if a string is palindrome or not.
+
+# text = input("Enter you string: ")
+# reversed = ""
+# for char in text:
+#     reversed = char + reversed
+
+# if text == reversed:
+#     print("string is palindrome")
+# else:
+#     print("string is not palindrome")
+
 # 3. Write a Python program to count the occurrences of a character in a string.
+
+# text = input("Enter a string: ")
+# char = input("Enter a character: ")
+# count = text.count(char)
+# print("Character occurs:", count, "times")
 
 # String Manipulation:
 # 1. Write a Python program to count the number of vowels and consonants in a string.
+
+# text = input("Enter a string: ")
+
+# vowels = "aeiou"
+# vowel_count = 0
+# consonant_count = 0
+
+# for char in text.lower():
+#     if char in vowels:
+#         vowel_count += 1
+#     elif char.isalpha():
+#         consonant_count += 1
+
+# print("Vowels:", vowel_count)
+# print("Consonants:", consonant_count)
+
 # 2. Write a Python program to find the frequency of each character in a string (ignore case sensitivity).
+
+# text = input("Enter the string: ")
+# text = text.lower()
+# frequency = {}
+
+# for char in text:
+#     if char in frequency:
+#         frequency[char] += 1
+#     else:
+#         frequency[char] =1
+# print(frequency)
+
 # 3. Write a Python program to capitalize the first letter of each word in a sentence.
+
+# text = input("Enter a sentence: ")
+# result = text.title()
+# print(result)
 
 # Substring Operations:
 # 1. Write a Python program to check if one string is a rotation of another.
-# 2. Write a Python program to find all occurrences of a substring in a given string.
-# 3. Write a Python program to remove all leading and trailing whitespace
 
-# characters from a string.
+# str1 = input("Enter first string: ")
+# str2 = input("Enter second string: ")
+
+# if len(str1) == len(str2) and str2 in (str1 + str1):
+#     print("Strings are rotations")
+# else:
+#     print("Strings are not rotations")
+
+# 2. Write a Python program to find all occurrences of a substring in a given string.
+
+# text = "Python is easy. Python is powerful."
+# substring = "Python"
+# positions = []
+# start = 0
+
+# while True:
+#     position = text.find(substring, start)
+#     if position == -1:
+#         break
+#     positions.append(position)
+#     start = position + 1
+
+# print("Positions:", positions)
+
+# 3. Write a Python program to remove all leading and trailing whitespace characters from a string.
+
+# text = "    python     "
+# result = text.strip()
+# print(result)
 
 # String Sorting and Searching:
 # 1. Write a Python program to sort words in a sentence alphabetically.
+
+# text = input("Enter a sentence: ")
+# words = text.split()
+# words.sort(key=str.lower)
+# result = " ".join(words)
+# print(result)
+
 # 2. Write a Python program to find the longest word in a sentence.
+
+# sentence = "Python programming is very interesting"
+# words = sentence.split()
+# longest_word = max(words, key=len)
+# print("This is longest_word :",longest_word)
+
 # 3. Write a Python program to check if a string contains only digits.
+
+# text = input("Enter a string: ")
+
+# if text.isdigit():
+#     print("Contains only digits")
+# else:
+#     print("Does not contain only digits")
 
 # Advanced String Handling:
 # 1. Write a Python program to find the most occurring character in a string.
+
+# text = input("Enter a string: ")
+
+# frequency = {}
+
+# for char in text:
+#     if char != " ":
+#         frequency[char] = frequency.get(char, 0) + 1
+
+# if frequency:
+#     most_common = max(frequency, key=frequency.get)
+
+#     print("Most frequent character:", most_common)
+#     print("Frequency:", frequency[most_common])
+# else:
+#     print("No characters found")
+
 # 2. Write a Python program to check if two strings are anagrams of each other.
+
+# str1 = input("Enter first string: ")
+# str2 = input("Enter second string: ")
+
+# str1 = str1.replace(" ", "").lower()
+# str2 = str2.replace(" ", "").lower()
+
+# if sorted(str1) == sorted(str2):
+#     print("Strings are anagrams")
+# else:
+#     print("Strings are not anagrams")
+
 # 3. Write a Python program to find the first non-repeating character in a string.
+
+# text = input("Enter a string: ")
+
+# for char in text:
+#     if text.count(char) == 1:
+#         print("First non-repeating character:", char)
+#         break
+# else:
+#     print("No non-repeating character found")
 
 # Regular Expressions:
 # 1. Write a Python program to validate an email address using regular expressions.
+
+# import re
+
+# email = input("Enter your email: ")
+
+# pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+
+# if re.match(pattern, email):
+#     print("Valid email")
+# else:
+#     print("Invalid email")
+
 # 2. Write a Python program to extract numbers from a string using regular expressions.
+
+# import re
+
+# text = "I have 25 apples and 10 mangoes"
+
+# numbers = re.findall(r'\d+', text)
+
+# print(numbers)
+
 # 3. Write a Python program to replace specific patterns in a string using regular expressions.
+
+# import re
+
+# text = "My phone number is 9876543210"
+
+# result = re.sub(r'\d', '*', text)
+
+# print(result)
+
 
 # Encoding and Decoding:
 # 1. Write a Python program to encode a string into base64 format.
+
+# import base64
+
+# text = "Hello Python"
+
+# encoded = base64.b64encode(text.encode())
+
+# print(encoded.decode())
+
 # 2. Write a Python program to decode a base64 encoded string.
+
+# import base64
+
+# encoded = "SGVsbG8gUHl0aG9u"
+
+# decoded = base64.b64decode(encoded).decode()
+
+# print(decoded)
