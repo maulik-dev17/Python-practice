@@ -198,26 +198,80 @@
 # 24. LONGEST WORD FINDER
 # Given sentence = "Shreya enjoys learning Python programming", find the longest word using a loop and list operations.
 
+# sentence = "Shreya enjoys learning Python programming"
+# words = sentence.split()
+# longest = ""
+
+# for word in words:
+#     if len(word) > len(longest):
+#         longest = word
+# print("Longest word: ",longest)
+# print("Lenth: ", len(longest))
+
 # 25. WORD LENGTH ANALYSIS
 # Given sentence = "Amit studies computer science", create a list containing the length of each word.
+
+# sentence = "Amit studies computer science"
+# words = sentence.split()
+# lengths = []
+# for word in words:
+#     lengths.append(len(word))
+# print(lengths)    
 
 # 26. CHARACTER FREQUENCY
 # Given text = "maharashtra", count the occurrences of every unique character using string and list operations.
 
+# text = "maharashtra"
+# characters = []
+# for char in text:
+#     if char not in characters:
+#         characters.append(char)
+# for char in characters:
+#     print(char, ":", text.count(char))
+
 # 27. REMOVE UNWANTED WORDS
 # Given sentence = "Riya is very smart and Riya is very hardworking", remove "very" and "and" from the word list and create a new sentence.
+
+# sentence = "Riya is very smart and Riya is very hardworking"
+# words = sentence.split()
+# while "very" in words:
+#     words.remove("very")
+# while "and" in words:
+#     words.remove("and")
+# result = " ".join(words)
+# print(result)
 
 # 28. SORT WORDS BY LENGTH
 # Given sentence = "Ishita likes learning Python programming", arrange the words from shortest to longest.
 
+# sentence = "Ishita likes learning Python programming"
+# words = sentence.split()
+# words.sort(key=len)
+# print(words)
+# print(" ".join(words))
+
 # 29. WORD REPLACEMENT
 # Given sentence = "Rohan likes Java. Rohan practices Java.", replace "Java" with "Python", split the result into a list, reverse the list, and join it again.
+
+# sentence = "Rohan likes Java. Rohan practices Java."
+# new_sentence = sentence.replace("Java", "Python")
+# words = new_sentence.split()
+# words.reverse()
+# result = " ".join(words)
+# print(result)
 
 # 30. STUDENT NAME PROCESSING
 # Clean the names, remove duplicates, sort them alphabetically, and display the final names separated by commas.
 
 # students = "  Aarav, Priya, Kabir, Aarav, Sneha, Priya  "
+# names = students.strip().split(",")
+# clean_names = []
 
+# for name in names:
+#     name = name.strip()
+#     if name not in clean_names:
+#         clean_names.append(name)
 
-# PRACTICE INSTRUCTION
-# Try solving the questions using the concepts from your Python string file. For combined problems, use split(), join(), strip(), replace(), and relevant list methods such as append(), extend(), insert(), remove(), pop(), sort(), reverse(), count(), and index().
+# clean_names.sort()
+# result = ", ".join(clean_names)
+# print(result)
