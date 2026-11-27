@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="{{GREEN}}">
+  <meta name="description" content="{{META_DESC}}">
+  <title>{{BRAND}} — {{PAGE_TITLE}}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="{{FONTS_URL}}" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="preloader" id="preloader"><div class="pre-brand">{{BRAND}}<span>.</span></div><div class="pre-line"></div></div>
+  <div class="progress" id="progress"></div>
+  <canvas id="snow" aria-hidden="true"></canvas>
+  <div class="announcement"><span class="sparkle">✳</span> {{ANNOUNCEMENT}} <span class="sparkle">✳</span></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="{{BRAND}} home">{{BRAND}}<span>.</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about">THE PARTY</a><a href="#moments">HIGHLIGHTS</a><a href="#schedule">SCHEDULE</a>
+      <a class="nav-cta" href="#rsvp">RSVP <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> {{EYEBROW}} <span></span></p>
+        <h1>{{HEADLINE}}</h1>
+        <p class="hero-intro">{{HERO_INTRO}}</p>
+        <div class="hero-actions"><a class="button button-red" href="#rsvp">SAVE YOUR SPOT <span>↗</span></a><a class="text-link" href="#about">DISCOVER THE EVENING <span>↓</span></a></div>
+      </div>
+<!--ART-->      <div class="hero-art" aria-label="Stylized Christmas tree illustration">
+        <div class="moon"></div><div class="star star-one">✦</div><div class="star star-two">✧</div>
+        <div class="tree tree-back"></div><div class="tree tree-mid"></div><div class="tree tree-front"></div>
+        <div class="tree-trunk"></div><div class="ornament ornament-one"></div><div class="ornament ornament-two"></div><div class="ornament ornament-three"></div>
+        <div class="gift gift-one"></div><div class="gift gift-two"></div>
+        <div class="art-caption">{{ART_CAPTION}}</div>
+      </div>
+<!--/ART--><!--EMBLEM-->      <div class="hero-art emblem" aria-hidden="true"><div class="emblem-ring"></div><div class="emblem-ring r2"></div><div class="emblem-symbol">{{EMBLEM}}</div><div class="art-caption">{{ART_CAPTION}}</div></div>
+<!--/EMBLEM-->      <div class="hero-bottom"><span>{{DATE_CAPS}}</span><span class="scroll-mark">SCROLL TO EXPLORE ↓</span><span>{{HERO_FOOT}}</span></div>
+    </section>
+
+    <div class="marquee" aria-hidden="true"><div class="marquee-track">{{MARQUEE}}</div></div>
+
+    <section class="date-strip" aria-label="Event date">
+      <div><span class="strip-label">THE DATE</span><strong>{{DATE_SLASH}}</strong></div>
+      <div class="strip-divider"></div>
+      <div><span class="strip-label">THE OCCASION</span><strong>{{OCCASION}}</strong></div>
+      <div class="strip-divider"></div>
+      <div><span class="strip-label">THE VIBE</span><strong>{{VIBE}}</strong></div>
+    </section>
+
+    <section class="intro section-pad" id="about">
+      <div class="section-kicker">01 / THE INVITATION</div>
+      <div class="intro-content">
+        <h2>{{INTRO_TITLE}}</h2>
+        <div class="intro-text"><p class="lead">{{INTRO_LEAD}}</p><p>{{INTRO_P1}}</p><p>{{INTRO_P2}}</p><a class="underlined-link" href="#rsvp">COUNT ME IN <span>↗</span></a></div>
+      </div>
+      <div class="holly holly-one">✳</div><div class="holly holly-two">✳</div>
+    </section>
+
+    <section class="moments section-pad" id="moments">
+      <div class="section-heading"><div><div class="section-kicker">02 / THE GOOD STUFF</div><h2>{{MOMENTS_TITLE}}</h2></div><p>{{MOMENTS_SUB}}</p></div>
+      <div class="moment-grid">
+{{MOMENTS}}
+      </div>
+    </section>
+
+    <section class="schedule section-pad" id="schedule">
+      <div class="section-kicker">03 / THE PLAN</div><div class="schedule-head"><h2>{{SCHEDULE_TITLE}}</h2><p>{{SCHEDULE_SUB}}</p></div>
+      <div class="timeline">
+{{TIMELINE}}
+      </div>
+    </section>
+
+    <section class="details section-pad">
+      <div class="details-card"><div class="section-kicker">04 / THE DETAILS</div><h2>{{DETAILS_TITLE}}</h2>
+        <div class="detail-list"><div><span>WHEN</span><strong>{{DATE_FULL}}</strong></div><div><span>TIME</span><strong>{{TIME_TEXT}}</strong></div><div><span>WHERE</span><strong>{{VENUE}}</strong></div><div><span>DRESS CODE</span><strong>{{DRESS}}</strong></div></div>
+        <div class="detail-actions"><a class="button button-light" href="#rsvp">I'LL BE THERE <span>↗</span></a><button class="button button-ghost" id="addCal" type="button">ADD TO CALENDAR <span>+</span></button></div>
+      </div>
+      <div class="details-side"><div class="big-star">✳</div><p class="side-quote">{{QUOTE}}</p><span>{{QUOTE_BY}}</span><div class="mini-garland">✦　✳　✦　✳　✦</div></div>
+    </section>
+
+    <section class="countdown-section">
+      <div class="section-kicker">THE COUNTDOWN IS ON</div><h2>{{COUNTDOWN_TITLE}}</h2>
+      <div class="countdown" aria-label="Countdown to Christmas"><div><strong id="days">00</strong><span>DAYS</span></div><b>:</b><div><strong id="hours">00</strong><span>HOURS</span></div><b>:</b><div><strong id="minutes">00</strong><span>MINUTES</span></div><b>:</b><div><strong id="seconds">00</strong><span>SECONDS</span></div></div>
+      <a class="button button-red" href="#rsvp">MAKE IT A DATE <span>↗</span></a>
+    </section>
+
+    <section class="rsvp section-pad" id="rsvp">
+      <div class="rsvp-copy"><div class="section-kicker">05 / THE RSVP</div><h2>{{RSVP_TITLE}}</h2><p>{{RSVP_TEXT}}</p><div class="rsvp-note">KINDLY REPLY BY {{RSVP_DEADLINE}}</div></div>
+      <form class="rsvp-form" id="rsvpForm">
+        <label for="name">YOUR NAME</label><input id="name" name="name" type="text" placeholder="How should we call you?" required>
+        <label for="email">EMAIL ADDRESS</label><input id="email" name="email" type="email" placeholder="you@example.com" required>
+        <label for="guests">NUMBER OF GUESTS</label><select id="guests" name="guests"><option value="1">Just me</option><option value="2">2 people</option><option value="3">3 people</option><option value="4">4 people</option><option value="5">5 people</option></select>
+        <label for="note">A LITTLE NOTE <span>(OPTIONAL)</span></label><textarea id="note" name="note" rows="3" placeholder="Dietary needs, song requests, or a hello..."></textarea>
+        <button class="button button-red submit-button" type="submit">SEND MY RSVP <span>↗</span></button>
+        <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+        <small class="form-hint">Demo form: connect an email or form service before publishing to collect responses.</small>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand footer-brand" href="#home">{{BRAND}}<span>.</span></a><p>{{FOOTER_LINE}}</p><span>{{DATE_CAPS}} · {{FOOT_TAG}}</span><a href="#home" class="back-top">BACK TO TOP ↑</a></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+{
+  "preset": "christmas",
+  "colors": {},
+  "fonts": {
+    "serif": "Playfair Display",
+    "sans": "DM Sans"
+  },
+  "slug": "noel-christmas-party",
+  "brand": "NOËL",
+  "page_title": "A Christmas Party",
+  "meta_desc": "Join us for a little more Christmas magic on 25 December 2026.",
+  "date": "2026-12-25T18:00",
+  "duration_hours": 4,
+  "time_text": "6:00 PM",
+  "venue": "[ Add venue and address ]",
+  "dress": "Festive / Come as you feel fabulous",
+  "rsvp_deadline": "[ RSVP DEADLINE ]",
+  "organizer_email": "[ADD-ORGANIZER-EMAIL]",
+  "rsvp_subject": "Christmas Party RSVP",
+  "announcement": "THE MOST WONDERFUL TIME OF THE YEAR",
+  "eyebrow": "YOU'RE INVITED TO CELEBRATE",
+  "headline": "A little more<br><em>Christmas</em> magic.",
+  "hero_intro": "Good people. Warm lights. A night full of wonder.<br class=\"desktop-only\"> Let's make this one worth remembering.",
+  "hero_art": true,
+  "art_caption": "A SEASON TO<br>BE TOGETHER",
+  "hero_foot": "MADE WITH HOLIDAY SPIRIT",
+  "occasion": "Christmas <em>Party</em>",
+  "vibe": "Festive <em>&</em> Fabulous",
+  "intro_title": "Come for the<br>festive feeling.<br><em>Stay for the memories.</em>",
+  "intro_lead": "Christmas is better when we're together.",
+  "intro_p1": "So, let's gather under the lights for an evening of delicious treats, feel-good music, cheerful company and all the little moments that make the season special.",
+  "intro_p2": "Dress up, bring your best holiday spirit, and let the celebrations begin.",
+  "moments_title": "Little moments.<br><em>Big memories.</em>",
+  "moments_sub": "Everything you need for a<br>proper Christmas celebration.",
+  "moments": [
+    {
+      "icon": "✳",
+      "title": "Festive<br>feasting",
+      "text": "Seasonal bites, sweet treats<br>and something delicious.",
+      "scribble": "YUM!"
+    },
+    {
+      "icon": "♫",
+      "title": "Good tunes<br>only",
+      "text": "Holiday classics and<br>dance-floor favourites.",
+      "scribble": "♪ ♫ ♪"
+    },
+    {
+      "icon": "♡",
+      "title": "Joy all<br>around",
+      "text": "Lovely people, little surprises<br>and plenty of cheer.",
+      "scribble": "CHEERS!"
+    }
+  ],
+  "schedule_title": "Here's how<br>the night <em>glows.</em>",
+  "schedule_sub": "A little structure, a lot of sparkle.<br>Adjust the times to fit your night.",
+  "schedule": [
+    {
+      "time": "06:00 PM",
+      "icon": "✧",
+      "title": "Doors open & hellos",
+      "text": "Arrive, settle in and soak up the festive atmosphere."
+    },
+    {
+      "time": "07:00 PM",
+      "icon": "✳",
+      "title": "Let the feasting begin",
+      "text": "Good food, great company and a little Christmas magic."
+    },
+    {
+      "time": "08:30 PM",
+      "icon": "♫",
+      "title": "Music, games & cheer",
+      "text": "Bring your best moves and your competitive spirit."
+    },
+    {
+      "time": "10:00 PM",
+      "icon": "♡",
+      "title": "One last toast",
+      "text": "Make a memory, share a laugh and wrap up the night."
+    }
+  ],
+  "details_title": "Put it in<br>your <em>calendar.</em>",
+  "quote": "“The best way to spread Christmas cheer is to celebrate together.”",
+  "quote_by": "— THE NOËL SPIRIT",
+  "countdown_title": "See you under<br>the <em>mistletoe.</em>",
+  "party_time": "It’s party<br>time, <em>Noël!</em>",
+  "rsvp_title": "Save a little<br><em>room for joy.</em>",
+  "rsvp_text": "Let us know you're coming. We can't wait to celebrate with you.",
+  "foot_tag": "MERRY EVERYTHING",
+  "footer_line": "MAKE ROOM FOR A LITTLE MAGIC.",
+  "marquee": [
+    "MERRY & BRIGHT",
+    "GOOD FOOD",
+    "GREAT MUSIC",
+    "LOVELY PEOPLE"
+  ]
+}

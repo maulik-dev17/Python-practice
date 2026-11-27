@@ -1,0 +1,27 @@
+{
+  "preset": "birthday", "slug": "mia-30-birthday", "brand": "MIA30", "page_title": "A Birthday Bash",
+  "meta_desc": "Mia is turning 30 — come celebrate with music, cake and dancing.",
+  "date": "2027-03-13T19:00", "duration_hours": 5, "time_text": "7:00 PM", "venue": "The Rooftop, 12 Park Street",
+  "dress": "Glam & colourful", "rsvp_deadline": "1 MARCH", "organizer_email": "mia@example.com", "rsvp_subject": "Mia's 30th RSVP",
+  "announcement": "ONE NIGHT ONLY", "eyebrow": "YOU'RE INVITED TO PARTY", "headline": "Thirty,<br><em>flirty</em> & fabulous.",
+  "hero_intro": "Cake, confetti and your favourite people.<br class=\"desktop-only\"> Let's make 30 unforgettable.",
+  "hero_art": false, "hero_foot": "MADE WITH LOTS OF LOVE", "occasion": "Birthday <em>Bash</em>", "vibe": "Bright <em>&</em> Bold",
+  "intro_title": "Come for the<br>cake.<br><em>Stay for the dancing.</em>", "intro_lead": "Thirty only happens once.",
+  "intro_p1": "Join me for an evening of great music, even better company and a very big cake.",
+  "intro_p2": "Wear something bold and bring your dancing shoes.",
+  "moments_title": "Little moments.<br><em>Big smiles.</em>", "moments_sub": "Everything you need for a<br>proper birthday party.",
+  "moments": [
+    {"icon": "✳", "title": "Cake &<br>treats", "text": "Sweet bites and<br>a towering cake.", "scribble": "YUM!"},
+    {"icon": "♫", "title": "DJ all<br>night", "text": "Throwbacks and<br>today's hits.", "scribble": "♪ ♫ ♪"},
+    {"icon": "♡", "title": "Best people<br>only", "text": "Friends, family and<br>photo-booth chaos.", "scribble": "CHEERS!"}],
+  "schedule_title": "How the night<br>will <em>unfold.</em>", "schedule_sub": "A little structure, a lot of fun.",
+  "schedule": [
+    {"time": "07:00 PM", "icon": "✧", "title": "Welcome drinks", "text": "Arrive, mingle and grab a drink."},
+    {"time": "08:30 PM", "icon": "✳", "title": "Cake time", "text": "Candles, wishes and speeches."},
+    {"time": "09:30 PM", "icon": "♫", "title": "Dance floor opens", "text": "DJ takes over until late."}],
+  "details_title": "Save the<br><em>date.</em>", "quote": "“Age is just a number — the party is forever.”", "quote_by": "— MIA",
+  "countdown_title": "Counting down<br>to <em>thirty.</em>", "party_time": "It’s party<br>time, <em>Mia!</em>",
+  "rsvp_title": "Say you'll<br><em>be there.</em>", "rsvp_text": "Let me know you're coming — it wouldn't be the same without you.",
+  "foot_tag": "HAPPY BIRTHDAY", "footer_line": "30 LOOKS GOOD ON ME.",
+  "marquee": ["HAPPY BIRTHDAY", "CAKE", "DANCING", "GOOD VIBES"]
+}
